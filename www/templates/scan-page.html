@@ -1,0 +1,19 @@
+<ion-view title="OCR Trial">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear" style="margin-right: 10px; padding-top: 5px;" ng-click="openPopover($event)">
+            <i class="ion-android-more-vertical" style="font-size: 24px;"></i>
+        </button>
+    </ion-nav-buttons>
+    <div class="backdrop" ng-class="{'visible active' : closeMfbButton === 'open'}" ng-click="onBackDropClick()">
+    </div>
+    <ion-content>
+        <div style="height: 100%; width: 100%; padding: 10px;">
+            <img style="width: 100%;" id="pic">
+        </div>
+    </ion-content>
+    <nav mfb-menu position="br" effect="zoomin" bgcolor='#3F51B5' active-icon="ion-close-round" resting-icon="ion-plus-round" toggling-method="click" menu-state="closeMfbButton">
+        <button mfb-button bgcolor='#009688' label="Choose Photo" icon="ion-android-image" ng-click="choosePhoto()"></button>
+        <button mfb-button bgcolor='#F44336' label="Take Photo" icon="ion-android-camera" ng-click="takePhoto()"></button>
+        <button mfb-button bgcolor='#008080' label="Extract Text" icon="ion-document-text" ng-click="extractText()"></button>
+    </nav>
+</ion-view>
