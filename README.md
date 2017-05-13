@@ -1,2 +1,2 @@
-# ocr_sparse
-ionic ocr app using https://ocr.space/ api
+# OCR Sparse
+IONIC ocr app that used https://ocr.space/ api
