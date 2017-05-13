@@ -1,2 +1,2 @@
 # ocr_sparse
-trial ionic ocr app using ocr.space
+ionic ocr app using https://ocr.space/ api
